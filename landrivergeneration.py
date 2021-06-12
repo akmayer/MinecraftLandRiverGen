@@ -87,7 +87,7 @@ if __name__ == "__main__":
     #Do not change the seed in between doing these, otherwise the function will be different.
     #Advised to run the program first with this as terrain to create terrain, then with
     #river to create a river on that terrain.
-    progfunc = "river"
+    progfunc = "terrain"
 
     #Terrain Generation Process
     if progfunc == "terrain":
