@@ -92,8 +92,8 @@ if __name__ == "__main__":
     #Terrain Generation Process
     if progfunc == "terrain":
         mc.postToChat("Beginning terrain generation...")
-        cornerpos1 = (-50, 1, -50)       #Dictates the dimensions of the terrain to be generated
-        cornerpos2 = (50, 100, 50) #Boxes larger than 300 x 300 have a good chance of crashing the server, probably depends on cpu
+        cornerpos1 = (0, 1, 0)       #Dictates the dimensions of the terrain to be generated
+        cornerpos2 = (200, 200, 200) #Boxes larger than 300 x 300 have a good chance of crashing the server, probably depends on cpu
         mc.setBlocks(cornerpos1[0], cornerpos1[1], cornerpos1[2], cornerpos2[0], cornerpos2[1], cornerpos2[2], 0) #Clears the area you want to be working with with air beforehand.
         for xval in range(cornerpos1[0], cornerpos2[0] + 1):
             for zval in range(cornerpos1[2], cornerpos2[2] + 1):
